@@ -2,11 +2,8 @@
 #include "src/funzioni.h"
 
 using namespace std;
-int main(){
+int main()
+{
 
-    calcMultipli(10,100,3);
-
-
+    calcMultipli(10, 100, 3);
 }
-
-

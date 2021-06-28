@@ -4,26 +4,20 @@ using namespace std;
 
 int main()
 {
-    int k,n,somma = 0;
+    int k, n, somma = 0;
 
-    cout<<"Inserisci un numero: ";
-    cin>>n;
+    cout << "Inserisci un numero: ";
+    cin >> n;
 
-    cout<<"Inserisci K: ";
-    cin>>k;
+    cout << "Inserisci K: ";
+    cin >> k;
 
-    for(int i=1; i<=k;i++){
+    for (int i = 1; i <= k; i++)
+    {
 
-        somma=somma+pow(n+i,2);
-
-
+        somma = somma + pow(n + i, 2);
     }
 
-
-    cout<<"Risultato: "<<somma;
+    cout << "Risultato: " << somma;
     return 0;
-
 }
-
-
-

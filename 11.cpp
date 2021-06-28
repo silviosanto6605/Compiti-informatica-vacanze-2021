@@ -1,37 +1,29 @@
 #include <iostream>
 
-
 using namespace std;
-int main(){
+int main()
+{
 
-    int x=0, y=0, n=0, a=1;
+    int x = 0, y = 0, n = 0, a = 1;
 
-    cout<<"Inserisci un numero intero: \t";
-    cin>>n;
-    
-    cout<<"Inserisci un numero intero: \t";
-    cin>>x;
+    cout << "Inserisci un numero intero: \t";
+    cin >> n;
 
-    cout<<"Inserisci un numero intero: \t";
-    cin>>y;
+    cout << "Inserisci un numero intero: \t";
+    cin >> x;
 
+    cout << "Inserisci un numero intero: \t";
+    cin >> y;
 
-    while(a<y){
+    while (a < y)
+    {
 
-        if(a>=x){
+        if (a >= x)
+        {
 
-            cout<<a<<endl;
-
+            cout << a << endl;
         }
 
-        a=a*n;
-
+        a = a * n;
     }
-
-
-
-
-
-
-
 }
