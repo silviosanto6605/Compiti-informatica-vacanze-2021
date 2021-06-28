@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/multipli.h"
+#include "src/funzioni.h"
 
 using namespace std;
 int main(){
