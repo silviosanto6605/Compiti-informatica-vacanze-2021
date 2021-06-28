@@ -1,11 +1,13 @@
 #include <iostream>
 
+using namespace std;
+
 
 int calcMultipli(int partenza, int fine, int n){
     for(int i=partenza; i<fine; i++){
 
         if(i%n == 0){
-            std::cout<<i<<std::endl;
+            cout<<i<<endl;
 
         }
 
@@ -24,7 +26,7 @@ int factorial(int n) {
 
 
     if (n < 0){
-        std::cout << "Non esiste il fattoriale di un numero negativo";
+        cout << "Non esiste il fattoriale di un numero negativo";
         return 0;
     }
         
@@ -35,6 +37,19 @@ int factorial(int n) {
         return fattoriale;    
     }
 
+}
+
+
+void Quadrato_N_numeri(int n)
+{
+    int quadrato = 0, dispari = 1;
+ 
+    for(int x = 0; x < n; x++)
+    {
+        cout << quadrato << " ";
+        quadrato = quadrato + dispari;
+        dispari = dispari + 2;
+    }
 }
 
 
