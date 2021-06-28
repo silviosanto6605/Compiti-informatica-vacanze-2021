@@ -52,11 +52,3 @@ void Quadrato_N_numeri(int n)
     }
 }
 
-
-
-
-
-
-
-
-

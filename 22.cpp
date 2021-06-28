@@ -13,13 +13,4 @@ int main()
     Quadrato_N_numeri(N);
 
     return 0;
-    
-
-
 }
-
-
-
-
-
-
