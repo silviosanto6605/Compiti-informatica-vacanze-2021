@@ -39,6 +39,25 @@ int factorial(int n)
     }
 }
 
+void DecToBin(int n)
+{
+
+    int i;
+    int a[64] = {};
+
+    for (i = 0; n > 0; i++)
+    {
+        a[i] = n % 2;
+        n = n / 2;
+    }
+    cout << "Numero in formato binario = ";
+    for (i = i - 1; i >= 0; i--)
+    {
+        cout << a[i];
+    }
+    cout << endl;
+}
+
 void Quadrato_N_numeri(int n)
 {
     int quadrato = 0, dispari = 1;
