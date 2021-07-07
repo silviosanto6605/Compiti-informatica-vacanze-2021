@@ -58,6 +58,19 @@ void DecToBin(int n)
     cout << endl;
 }
 
+void DecToOctal(int n) {
+    int resto; 
+    int ottale = 0, i = 1;
+   
+    while(n != 0) {
+        resto = n%8;
+        n = n/8;
+        ottale = ottale + (resto*i);
+        i = i*10;
+    }
+    cout<<ottale;
+}
+
 void Quadrato_N_numeri(int n)
 {
     int quadrato = 0, dispari = 1;
