@@ -1,12 +1,15 @@
 #include <iostream>
+#include "src/funzioni.h"
 using namespace std;
+
+
 int main()
 {
-	char binaryNumber[] = ""; 
+	int n = 0;
 	
 	cout<<"Inserisci un numero binario: "<<endl;
-	cin>>binaryNumber;
+	cin>>n;
+	BinToDec(n);
 
-    cout << stoi(binaryNumber, 0, 2);
-    return 0;;
+    
 }
