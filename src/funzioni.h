@@ -114,3 +114,21 @@ int moltiplicazione(int fattore1, int fattore2) {
     return prodotto;
 
 }
+
+
+int potenza32_A(int base, int exp){
+    const int base_fissa = base;
+    for (int i = 1; i < exp; i++) {
+        base = base*base_fissa;
+    }
+    return base;
+
+}
+int potenza32_B(int base, int exp){
+    const int base_fissa = base;
+    for (int i = 1; i < exp; i++) {
+        base = moltiplicazione(base,base_fissa);
+    }
+    return base;
+
+}
