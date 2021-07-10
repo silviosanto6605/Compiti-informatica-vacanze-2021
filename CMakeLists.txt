@@ -48,4 +48,6 @@ set_target_properties(30 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_D
 add_executable(31 31.cpp)
 set_target_properties(31 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/out/") 
 add_executable(32 32.cpp)
-set_target_properties(32 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/out/")
+set_target_properties(32 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/out/") 
+add_executable(33 33.cpp)
+set_target_properties(33 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/out/")
