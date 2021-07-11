@@ -63,7 +63,7 @@ public:
             cout << "\n" << operazioni[i];
 
         }
-        cout << "\n==============================\n";
+        cout << "\n================================\n";
 
     }
 
@@ -81,18 +81,24 @@ int main() {
     cin >> conto.saldo;
 
     while (scelta != 0) {
-
-
+        cout<<"\n\n================================\n";
+        cout << "SALDO: " << conto.getSaldo() << endl;
         cout
                 << "Quali operazioni vuoi effettuare?\n1)Visualizza operazioni\n2)Preleva\n3) Versamento\n0 per terminare"
                 << endl;
         cin >> scelta;
+        if (scelta != 1) {
+            if (scelta < 0 || scelta > 3 ) {
+                cout << "\nSCELTA NON VALIDA!!\n\n";
 
-        if (scelta == 1) { /* Se deve visualizzare e basta, non inserire una somma */}
-        else if (scelta != 0) {
-            cout << "\nInserisci una somma: ";
-            cin >> somma;
+            } else if (scelta!=0){
+
+                cout << "\nInserisci una somma: ";
+                cin >> somma;
+            }
+
         }
+
 
         switch (scelta) {
 
