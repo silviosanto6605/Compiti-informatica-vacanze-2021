@@ -149,16 +149,15 @@ int potenza32_B(int base, int exp)
 }
 
 void calcolaDataPasqua(int anno)
-//TODO: da fixare
 {
 	int y=0, n=0, a=0, b=0, m=0, q=0, w=0, risult=0;
 	y = anno;
-	n = 1900 - y;
-	a = remainder(n,19);
+	n = abs(1900 - y);
+	a = (n%19);
 	b = ((7 * a) + 1) / 19;
-	m = remainder(((11 * a) + 4 - b),29);
+	m = ((11 * a) + 4 - b)%29;
 	q = n / 4;
-	w = remainder((n + q + 31 - m) , 7);
+	w = (n + q + 31 - m) % 7;
 	risult = 25 - m - w;
 	
 
