@@ -182,3 +182,12 @@ string convertToAnyBase(int number, int base){
     return result;
 
 }
+
+int mcd(int x, int y) {
+  while (y > 0) {
+    int r = x % y;
+    x = y;
+    y = r;
+  }
+  return x;
+}
