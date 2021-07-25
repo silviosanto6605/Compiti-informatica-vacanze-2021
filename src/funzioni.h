@@ -19,7 +19,7 @@ int calcMultipli(int partenza, int fine, int n)
 	return 0;
 }
 
-int factorial(int n)
+long long factorial(long long n)
 {
 	long double fattoriale = 1.0;
 

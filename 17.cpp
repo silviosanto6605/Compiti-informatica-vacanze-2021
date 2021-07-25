@@ -10,7 +10,7 @@ int main()
     cout << "Quanti numeri vuoi inserire? ";
     cin >> N;
 
-    int sequenza[N]; /*Creazione array*/
+    int *sequenza = new int[N]; /*Creazione array*/
 
     for (int i = 0; i < N; i++)
     { /*Cicla l'array per inserire i valori al suo interno */

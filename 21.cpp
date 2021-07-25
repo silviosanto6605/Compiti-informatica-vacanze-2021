@@ -5,12 +5,12 @@ using namespace std;
 int main()
 {
 
-    int N, numero;
+    long long N, numero;
 
     cout << "Di quanti numeri vuoi caclcolare il fattoriale? ";
     cin >> N;
 
-    double numeri[N];
+    long long  *numeri = new long long[N];
 
     for (int i = 0; i < N; i++)
     { /*Inserimento numeri nell'array */

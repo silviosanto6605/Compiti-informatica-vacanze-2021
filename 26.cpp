@@ -4,8 +4,8 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {   
-    int arrsize, contaSottopeso, contaSovrappeso, contaPesoCorretto;
-    float peso, pesoTotaleNorma, pesoTotaleFuoriNorma;
+    int arrsize = 0, contaSottopeso = 0, contaSovrappeso = 0, contaPesoCorretto = 0;
+    float peso,pesoTotaleNorma,pesoTotaleFuoriNorma;
     const float PESORNORMA = 1.0;
 
 
@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     cin>>arrsize;
 
 
-    float pesi[arrsize]; 
+    float *pesi = new float[arrsize]; 
     
 
 

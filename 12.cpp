@@ -15,7 +15,7 @@ int main()
     cout << "Inserisci il limite finale: \t";
     cin >> limite2;
 
-    int altezze[nAltezze];
+    int *altezze = new int[nAltezze];
 
     for (int i = 0; i < nAltezze; i++)
     { /* Cicla l'array per inserire tutte le altezze */

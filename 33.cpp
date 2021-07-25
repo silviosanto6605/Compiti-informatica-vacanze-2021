@@ -19,7 +19,8 @@ int main() {
 
         cout << "Inserisci una lettera: ";
         cin >> input[i];
-        input[i] = putchar(toupper(input[i])); /* Converti il carattere in input in un carattere maiuscolo */
+        input[i] = putchar(toupper(input[i]));
+        cout<<endl; /* Converti il carattere in input in un carattere maiuscolo */
 
     }
 
@@ -43,6 +44,7 @@ int main() {
 
     cout << "Numero vocali: " << numeroVocali << endl;
     cout << "Numero consonanti: " << numeroConsonanti;
+    delete input; /* Elimina la memoria allocata */
 
 
 }
