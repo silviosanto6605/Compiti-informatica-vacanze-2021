@@ -71,22 +71,20 @@ void DecToOctal(int n)
 	cout << ottale;
 }
 
-void BinToDec(int n)
-{
-	int decimalNumber = 0;
-	int base = 1;
-	int temp = n;
 
-	while (temp)
-	{
-		int lastDigit = temp % 10;
-		temp = temp / 10;
-		decimalNumber += lastDigit * base;
-		base = base * 2;
-	}
-	cout << "Il decimale di " << n << " e' " << decimalNumber << endl;
-	;
+int binaryToDecimal(long long n)
+{
+    int decimalNumber = 0, i = 0, remainder;
+    while (n!=0)
+    {
+        remainder = n%10;
+        n /= 10;
+        decimalNumber += remainder*pow(2,i);
+        ++i;
+    }
+    return decimalNumber;
 }
+
 
 void Quadrato_N_numeri(int n)
 {
