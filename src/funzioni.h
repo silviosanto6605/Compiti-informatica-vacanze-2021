@@ -172,3 +172,15 @@ void calcolaDataPasqua(int anno)
 	
 	} 
 }
+
+string convertToAnyBase(int number, int base){
+
+    string bases="0123456789ABCDEF";
+    string result;
+    while(number>0){
+        result = bases[number%base]+result;
+        number = number/base;
+    }
+    return result;
+
+}
